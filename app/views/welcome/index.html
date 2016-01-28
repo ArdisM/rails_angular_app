@@ -1,0 +1,26 @@
+<section ng-controller="PilotsController">
+
+  <form ng-submit="createPilot()">
+    <input type="text" ng-model="newPilot.first_name" placeholder="...first name">
+    <input type="text" ng-model="newPilot.last_name" placeholder="...last name">
+    <input type="text" ng-model="newPilot.url" placeholder="...url">
+    <input type="text" ng-model="newPilot.missions" placeholder="...missions">
+    <input type="text" ng-model="newPilot.aeronautical_rating" placeholder="...aeronautical rating">
+    <input type="text" ng-model="newPilot.country" placeholder="...country">
+    <input class="button" type="submit">
+  </form>
+
+
+  <div ng-repeat="pilot in pilots">
+
+
+    <img ng-src="{{ pilot.url }}" alt="" />
+    <h3 class="fname">{{ pilot.first_name }} {{ pilot.last_name }}</h3>
+   <p> {{ pilot.missions }} </p>
+    <h3> {{ pilot.aeronautical_rating }} </h3>
+    <h3> {{ pilot.country }} </h3>
+
+  </div>
+
+
+</section>

@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Pilot.create({
+  first_name: 'Valentina',
+  last_name: 'Grizodubova',
+  missions: 'none',
+  aeronautical_rating: 'Polkovnik',
+  country: 'Russian Empire',
+  url: 'https://upload.wikimedia.org/wikipedia/commons/a/a6/Valentina_Grizodubova.jpg'
+})

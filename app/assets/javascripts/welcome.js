@@ -2,7 +2,10 @@
 // All this logic will automatically be available in application.js.
 var app = angular.module('Aces', []);
 
+
+
 app.controller('PilotsController', ['$scope', '$http', function($scope, $http){
+
 
   $http.get('/api/pilots').then(function(response){
     var data = response.data;
@@ -17,5 +20,12 @@ app.controller('PilotsController', ['$scope', '$http', function($scope, $http){
       $scope.pilots.push( data );
     });
   };
+
+ $scope.remove = function (index, pilots) {
+   var url = '/api/pilots/' + $scope.pilots[index].id;
+    $http.delete(url).then(function(response){
+      $scope.pilots.splice( index,1 );
+  });
+};
 
 }]);

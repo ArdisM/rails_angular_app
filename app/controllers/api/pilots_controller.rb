@@ -11,10 +11,18 @@ class Api::PilotsController < ApplicationController
       render json: new_pilot
     end
 
+    def destroy
+      @pilot = Pilot.find(params[:id])
+      @pilot.destroy
+      render json: {status: 200}
+    end
+
+
+
     private
 
     def pilot_params
-      params.require(:pilot).permit(:first_name, :last_name, :missions, :aeronautical_rating, :country, :url)
+      params.require(:pilot).permit(:first_name, :last_name, :missions, :rank, :country, :url)
     end
 
   end

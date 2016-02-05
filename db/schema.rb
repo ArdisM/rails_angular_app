@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20160128164716) do
     t.string   "first_name"
     t.string   "last_name"
     t.string   "missions"
-    t.string   "aeronautical_rating"
+    t.string   "rank"
     t.string   "country"
     t.string   "url"
-    t.datetime "created_at",          null: false
-    t.datetime "updated_at",          null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

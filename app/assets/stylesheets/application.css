@@ -14,13 +14,88 @@
  *= require_self
  */
 body{
-  background-color: orange;
+
+  background-color: black;
+  background-image: url("http://www.aeroemblem.com/images/719_PatchPlex.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: (45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+.inputs{
   text-align: center;
 }
 input.button{
-  background-color: red;
+  background-color: white;
 
 }
-.fname{
-  color: green;
+
+.info{
+  height: 538px;
+  top: 0;
+  display: inline-block;
+  border: 2px solid black;
+  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 25%;
+  border-radius: 5px;
+  margin:  0 1%;
+  text-align: center;
+
+
+}
+
+.name,.missions,.rank,.country{
+  color: yellow;
+  
+}
+
+.pic{
+  height: 30%;
+}
+
+.remove:hover{
+  background-color: red;
+}
+
+.remove{
+  background-color: white;
+
+}
+/**** NEON *****/
+@font-face {
+  font-family: 'Wallpoet';
+  font-style: normal;
+  font-weight: 400;
+  }
+#container {
+  width: 500px;
+  margin: auto;
+}
+p:nth-child(1) {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+  font-size: 400%;
+  color: olive;
+  font-family: Wallpoet;
+
+}
+
+p:nth-child(1){
+  -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon2 1.5s ease-in-out infinite alternate;
+  animation: neon2 1.5s ease-in-out infinite alternate;
+}
+
+
+/**neon**/
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #3FBF3F, 0 0 70px #3FBF3F, 0 0 80px #3FBF3F, 0 0 100px #3FBF3F, 0 0 150px #3FBF3F;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #3FBF3F, 0 0 35px #3FBF3F, 0 0 40px #3FBF3F, 0 0 50px #3FBF3F, 0 0 75px #3FBF3F;
+  }
 }

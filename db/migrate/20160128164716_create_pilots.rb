@@ -4,7 +4,7 @@ class CreatePilots < ActiveRecord::Migration
       t.string :first_name
       t.string :last_name
       t.string :missions
-      t.string :aeronautical_rating
+      t.string :rank
       t.string :country
       t.string :url
 

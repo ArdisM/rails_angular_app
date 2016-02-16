@@ -3,4 +3,4 @@
 
 A Pilot Archiver app that allows the user to add and store their favorite pilots from diferent eras.
 the User is able to add pictures of their  fav pilots and then its stored in a database 
-<tt>rake doc:app</tt>.
+
